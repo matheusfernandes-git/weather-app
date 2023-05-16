@@ -1,0 +1,42 @@
+.weather-data{
+    border-top: 1px solid #fff;
+    margin-top: 1.5em;
+    text-align: center;
+}
+
+.weather-data span{
+    margin: 0.5rem;
+}
+
+.temperature{
+    font-size: 20px;
+}
+
+.description-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.weather-icon{
+    margin-top: -22px;
+}
+
+.details-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.details-container .umidity{
+    border-right: 1px solid #fff;
+    margin-right: 10px;
+    padding: 0.6rem;
+}
+
