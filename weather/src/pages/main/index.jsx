@@ -4,7 +4,7 @@ import { useState } from "react";
 import WeatherData from "../../components/Data";
 
 export default function Weather() {
-  const [city, setCity] = useState("");
+  const [city, setCity] = useState('');
   const [weatherForecast, setWeatherForecast] = useState(null);
 
   const searchWeather = () => {
@@ -47,6 +47,7 @@ export default function Weather() {
         {weatherForecast ? (
           <WeatherData
             name={weatherForecast.name}
+            country={weatherForecast.sys.country}
             temp={parseInt(weatherForecast.main.temp)}
             description={weatherForecast.weather[0].description}
             umidity={`${weatherForecast.main.humidity}%`}

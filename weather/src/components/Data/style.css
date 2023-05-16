@@ -2,10 +2,24 @@
     border-top: 1px solid #fff;
     margin-top: 1.5em;
     text-align: center;
+    background-color: #FFF3E4;
+    color: #545454;
 }
 
 .weather-data span{
     margin: 0.5rem;
+}
+
+.weather-data h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-data h2 p{
+    margin: 0.1rem;
+    margin-top: 5px;
+    font-size: 18px;
 }
 
 .temperature{

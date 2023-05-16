@@ -1,10 +1,12 @@
 import { CiLocationOn } from "react-icons/ci";
 import { BsDroplet } from "react-icons/bs";
+import { AiOutlineClose } from 'react-icons/ai';
 import { FiWind } from "react-icons/fi";
 import "./style.css";
 
 export default function WeatherData({
   name,
+  country,
   temp,
   description,
   umidity,
@@ -13,9 +15,11 @@ export default function WeatherData({
 }) {
   return (
     <div className="weather-data">
+      <AiOutlineClose />
       <h2>
         <CiLocationOn />
         <span className="city">{name}</span>
+        <p>- {country}</p>
       </h2>
       <p className="temperature">
         <span>{temp}</span>&deg;C
