@@ -19,7 +19,9 @@ export default function Weather() {
       .then((data) => {
         setWeatherForecast(data);
         console.log(data);
-      });
+      })
+
+      setCity('');
   };
 
   const handleChange = (event) => {
