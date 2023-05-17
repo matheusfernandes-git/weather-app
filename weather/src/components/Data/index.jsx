@@ -3,7 +3,6 @@ import { BsDroplet } from "react-icons/bs";
 import { AiOutlineClose } from 'react-icons/ai';
 import { FiWind } from "react-icons/fi";
 import "./style.css";
-import { useState } from "react";
 
 export default function WeatherData({
   name,
