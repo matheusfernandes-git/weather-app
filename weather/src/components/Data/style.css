@@ -1,9 +1,22 @@
 .weather-data{
+    display: block;
     border-top: 1px solid #fff;
     margin-top: 1.5em;
     text-align: center;
     background-color: #FFF3E4;
     color: #545454;
+}
+
+.weather-data-closed{
+    display: none;
+    transition: 350ms;
+}
+
+.closed{
+    cursor: pointer;
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 .weather-data span{
@@ -14,6 +27,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: -20px;
 }
 
 .weather-data h2 p{

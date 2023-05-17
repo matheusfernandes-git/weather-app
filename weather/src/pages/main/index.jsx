@@ -4,8 +4,9 @@ import { useState } from "react";
 import WeatherData from "../../components/Data";
 
 export default function Weather() {
-  const [city, setCity] = useState('');
+  const [city, setCity] = useState("");
   const [weatherForecast, setWeatherForecast] = useState(null);
+  const [error, setError] = useState("");
 
   const searchWeather = () => {
     fetch(
@@ -14,14 +15,19 @@ export default function Weather() {
       .then((response) => {
         if (response.status === 200) {
           return response.json();
+        } else if (city === "") {
+          setError("Insira um nome de uma cidade!");
+        } else {
+          setError("Não foi possível encontrar o clima de uma cidade com este nome!");
         }
       })
       .then((data) => {
         setWeatherForecast(data);
         console.log(data);
-      })
+      });
 
-      setCity('');
+    setCity("");
+    setError("");
   };
 
   const handleChange = (event) => {
@@ -44,6 +50,10 @@ export default function Weather() {
             <AiOutlineSearch />
           </button>
         </div>
+        <div className="error-message">
+          <p>{error}</p>
+        </div>
+
         {weatherForecast ? (
           <WeatherData
             name={weatherForecast.name}
