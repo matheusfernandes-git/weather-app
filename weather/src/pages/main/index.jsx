@@ -8,6 +8,7 @@ export default function Weather() {
   const [city, setCity] = useState("");
   const [weatherForecast, setWeatherForecast] = useState(null);
   const [error, setError] = useState("");
+  // const [suggestion, setSuggestion] = useState("")
 
   const searchWeather = () => {
     fetch(
@@ -20,7 +21,7 @@ export default function Weather() {
           setError("Insira um nome de uma cidade!");
         } else {
           setError(
-            "Não foi possível encontrar o clima de uma cidade com este nome!"
+            "Não foi possível encontrar o clima de uma cidade com esse nome!"
           );
         }
       })
@@ -36,10 +37,6 @@ export default function Weather() {
   const handleChange = (event) => {
     setCity(event.target.value);
   };
-
-  const suggestions = () => {
-    setCity();
-  }
 
   return (
     <div className="container">
@@ -76,7 +73,17 @@ export default function Weather() {
         <div className="suggestions">
           <div>
             {SuggestionButton.map((btn) => {
-              return <button onClick={suggestions} key={btn.id}>{btn.name}</button>;
+              return (
+                <button
+                  onClick={() => {
+                    const city = btn.id;
+                    setCity(city);
+                  }}
+                  key={btn.id}
+                >
+                  {btn.name}
+                </button>
+              );
             })}
           </div>
         </div>
