@@ -54,6 +54,10 @@ button{
     border-radius: 4px;
 }
 
+button:hover{
+    background-color: rgb(255, 166, 0);
+}
+
 .suggestions{
     display: flex;
     flex-wrap: wrap;
