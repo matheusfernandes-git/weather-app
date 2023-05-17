@@ -1,17 +1,24 @@
 .container{
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 450px;
     height: 450px;
+    padding: 40px;
+    padding-bottom: 70px;*/
+    background-color: #3592BE;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 2rem;
+    color: #fdfdfd;
+    border-radius: 1rem;
+    max-width: 400px;
     margin: auto;
-    margin-top: 150px;
-    color: #fff;
-    border-radius: 15px;
+    margin-top: 50px;
 }
 
 .container h1{
+    text-align: center;
     font-size: 3em;
 }
 
@@ -38,6 +45,7 @@ input{
 }
 
 button{
+    background-color: #FFAD00;
     font-size: 18px;
     cursor: pointer;
     padding: 0rem 0.8rem 0rem 0.8rem;
@@ -49,9 +57,9 @@ button{
 .suggestions{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    text-align: center;
     border-top: 1px solid #fff;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .suggestions div{

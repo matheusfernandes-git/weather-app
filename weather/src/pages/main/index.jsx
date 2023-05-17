@@ -40,8 +40,7 @@ export default function Weather() {
   return (
     <div className="container">
       <div className="content">
-        <h1>Previsão do tempo</h1>
-        <p>Confira o clima da sua cidade:</p>
+        <h1>Confira o clima da sua cidade</h1>
         <div className="container-inputs">
           <input
             type="text"
