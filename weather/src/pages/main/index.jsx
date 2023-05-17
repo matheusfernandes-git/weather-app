@@ -8,7 +8,6 @@ export default function Weather() {
   const [city, setCity] = useState("");
   const [weatherForecast, setWeatherForecast] = useState(null);
   const [error, setError] = useState("");
-  // const [suggestion, setSuggestion] = useState("")
 
   const searchWeather = () => {
     fetch(

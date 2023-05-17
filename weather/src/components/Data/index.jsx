@@ -15,14 +15,14 @@ export default function WeatherData({
   iconElement,
 }) {
 
-  const[open, setOpen] = useState(true);
-  const closed = () => setOpen(!open);
+  // const[open, setOpen] = useState(true);
+  // const closed = () => setOpen(!open);
 
   return (
-    <div className={open ? "weather-data" : "weather-data-closed"}> 
-      <div className="closed">
+    <div className="weather-data"> 
+      {/* <div className="closed">
         <AiOutlineClose onClick={closed} size={22}/>
-      </div>
+      </div> */}
       <h2>
         <CiLocationOn />
         <span className="city">{name}</span>
