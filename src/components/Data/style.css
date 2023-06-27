@@ -7,18 +7,6 @@
     color: #545454;
 }
 
-/* .weather-data-closed{
-    display: none;
-    transition: 350ms;
-}
-
-.closed{
-    cursor: pointer;
-    text-align: right;
-    margin-top: 10px;
-    margin-right: 10px;
-} */
-
 .weather-data span{
     margin: 0.5rem;
 }
