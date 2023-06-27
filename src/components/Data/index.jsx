@@ -16,7 +16,9 @@ export default function WeatherData({
   return (
     <div className="weather-data"> 
       <h2>
-        <CiLocationOn />
+        <div>
+          <CiLocationOn />
+        </div>
         <span className="city">{name}</span>
         <p>- {country}</p>
       </h2>
