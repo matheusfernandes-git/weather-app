@@ -12,13 +12,10 @@ export default function WeatherData({
   wind,
   iconElement,
 }) {
-
   return (
-    <div className="weather-data"> 
+    <div className="weather-data">
       <h2>
-        <div>
-          <CiLocationOn />
-        </div>
+        <CiLocationOn />
         <span className="city">{name}</span>
         <p>- {country}</p>
       </h2>
