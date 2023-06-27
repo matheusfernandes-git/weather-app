@@ -1,6 +1,5 @@
 import { CiLocationOn } from "react-icons/ci";
 import { BsDroplet } from "react-icons/bs";
-import { AiOutlineClose } from 'react-icons/ai';
 import { FiWind } from "react-icons/fi";
 import "./style.css";
 
@@ -14,14 +13,8 @@ export default function WeatherData({
   iconElement,
 }) {
 
-  // const[open, setOpen] = useState(true);
-  // const closed = () => setOpen(!open);
-
   return (
     <div className="weather-data"> 
-      {/* <div className="closed">
-        <AiOutlineClose onClick={closed} size={22}/>
-      </div> */}
       <h2>
         <CiLocationOn />
         <span className="city">{name}</span>
@@ -51,5 +44,3 @@ export default function WeatherData({
     </div>
   );
 }
-
-// className="weather-data"
